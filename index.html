@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My first website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #977b7b;
+      color: #fdfdfd;
+    }
+
+    .hero {
+      height: 60vh;
+      background-image: url('rainbow-background-soft-pastel-abstract-600nw-2604726443.webp');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+    .hero-text {
+      background: rgba(151, 123, 123, 0.85);
+      padding: 60px;
+      border-radius: 50px;
+    }
+
+    nav {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #f8f8f8;
+      font-weight: bold;
+      margin: 0 8px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    h1,
+    h2,
+    p,
+    li {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 0;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    p {
+      text-align: center;
+      margin: 20px auto;
+      max-width: 700px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+    }
+
+    li {
+      margin-bottom: 20px;
+    }
+
+    .section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .section-title {
+      margin-bottom: 16px;
+      font-size: 2rem;
+    }
+
+    .section p,
+    .section ul {
+      text-align: center;
+      margin: 0 auto;
+      max-width: 800px;
+    }
+
+    .link-button {
+      display: inline-block;
+      margin-top: 12px;
+      color: white;
+      text-decoration: underline;
+    }
+
+    button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 760px) {
+      .hero {
+        height: auto;
+        padding: 40px 0;
+      }
+
+      .hero-text {
+        padding: 40px 20px;
+      }
+
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+      }
+
+      nav a {
+        margin: 4px 0;
+      }
+
+      p,
+      .section p,
+      .section ul,
+      ul {
+        text-align: center;
+      }
+
+      .section p,
+      .section ul {
+        max-width: 100%;
+      }
+
+      button {
+        width: calc(100% - 40px);
+        max-width: 320px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <div class="hero-text">
+      <h1>Unique Website</h1>
+      <p>Content and resources for web-developers</p>
+      <a href="#resources" class="link-button">Explore Now</a>
+    </div>
+  </div>
+
+  <nav>
+    <a href="#home">Home</a> |
+    <a href="#about">About</a> |
+    <a href="#services">Services</a> |
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="section">
+    <h2 class="section-title">About Us</h2>
+    <p>We are a tech oriented institution which leverages e-learning to avail learning materials and tutorials for programmers. Our goal is to make programming education accessible, practical, and engaging for learners at every level.</p>
+  </section>
+  <button onclick="alert('There are no registration options available at the moment.')">Register</button>
+  <section id="services" class="section">
+    <h2 class="section-title">What We Offer</h2>
+    <ul>
+      <li>Curated e-learning tutorials for HTML, CSS, and JavaScript.</li>
+      <li>Hands-on programming guides and practical code examples.</li>
+      <li>Supportive learning resources to help learners build projects confidently.</li>
+      <li>Coding tips, and developer best practices.</li>
+    </ul>
+
+    <div class="section">
+      <h2 id="resources" class="section-title">Resources</h2>
+      <ul>
+        <li><a href="https://www.w3schools.com/html/">HTML Tutorial</a></li>
+        <li><a href="https://www.w3schools.com/css/">CSS Tutorial</a></li>
+        <li><a href="https://www.w3schools.com/js/">JavaScript Tutorial</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2 class="section-title">Contact Us</h2>
+    <p>For more information, reach out to us by phone or visit our offices at 69 Avenue on Ngong Road, Nairobi.</p>
+    <p><strong>Phone:</strong> <a href="tel:+254722933789">+254 722 933 789</a> or <a href="tel:+254755893209">+254 755 893 209</a></p>
+  </section>
+</body>
+</html>
